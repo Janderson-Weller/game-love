@@ -1,0 +1,101 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+.container-main, .container-items, .container-initial, .container-response, .options {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.container-main {
+    background-image: linear-gradient(#f70a0a, #b82e2e);
+}
+
+.container-initial {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    max-height: 90%;
+    height: 80%;
+    width: 80%;
+}
+
+.title {
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+.options {
+    height: 70%;
+    width: 80%;
+}
+
+.yes, .no {
+    background-color: #fff;
+    text-transform: uppercase;
+    color: #000;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 1.5rem;
+    width: 9rem;
+    padding: .5rem;
+}
+
+.yes {
+    position: relative;
+    margin-left: -10rem;
+}
+
+.no {
+    position: absolute;
+    margin-left: 1rem;
+}
+
+.yes:hover, .no:hover {
+    cursor: pointer;
+}
+
+
+.container-response {
+    display: none;
+    flex-direction: column;
+    position: relative;
+    bottom: -100%;
+    height: 100%;
+    width: 100%;
+    animation: credits 4s forwards;
+    
+}
+
+.heart img {
+    animation: beating-heart .5s infinite linear;
+}
+
+/* anination heart */
+@keyframes beating-heart {
+    from {
+        height: 100%;
+    }
+
+    to {
+        height: 70%;
+    }
+}
+
+/* Credits */
+@keyframes credits {
+    from {
+        bottom: -100%;
+    }
+
+    to {
+        bottom: 0;
+    }
+    
+}

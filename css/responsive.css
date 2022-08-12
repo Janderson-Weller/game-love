@@ -1,0 +1,22 @@
+@media (max-width: 900px) {
+    .title {
+        font-size: 2rem;
+    }
+
+}
+
+
+@media (max-width: 550px) {
+    .title {
+        font-size: 1rem;
+    }
+    .yes, .no {
+        font-size: 1rem;
+        width: 7rem;
+        padding: 1rem;
+    }
+
+    .heart img {
+        height: 15rem;
+    }
+}
